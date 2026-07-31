@@ -63,6 +63,12 @@
 - Fathom-X: https://bluerobotics.com/store/comm-control-power/tether-interface/fathom-x/
 - Power Sense Module: https://bluerobotics.com/store/comm-control-power/control/psm-asm-r2-rp/
 
+## Nota Fathom-X / Fathom-X note
+
+**ES:** La Fathom-X es reemplazable solo si otra tecnología cumple la misma función: Ethernet/IP de largo alcance por tether con video + MAVLink. Para banco/pileta puede usarse Ethernet directo o WiFi. Para 100 m sumergido, mantener Fathom-X salvo prueba end-to-end de otra opción. Alternativas: otro HomePlug AV/IEEE-1901 compatible, extensores VDSL2/G.hn/EoC, fibra óptica, o RS-485/CAN solo para control sin video. No mezclar HomePlug con G.hn/VDSL/MoCA. Si se reutiliza el tether del V6, primero mapear conductores y probar; si no tiene un par sano, usar tether nuevo.
+
+**EN:** Fathom-X is replaceable only if another technology performs the same function: long-range Ethernet/IP over tether with video + MAVLink. For bench/pool tests, direct Ethernet or WiFi may work. For 100 m submerged, keep Fathom-X unless another option passes end-to-end testing. Alternatives: compatible HomePlug AV/IEEE-1901, VDSL2/G.hn/EoC extenders, fiber optics, or RS-485/CAN for control-only without video. Do not mix HomePlug with G.hn/VDSL/MoCA. If reusing the V6 tether, map conductors and test first; if no healthy pair exists, use a new tether.
+
 ## Estado / Status
 
 **ES:** listo para completar mediciones y enviar solicitud de RMA.  
