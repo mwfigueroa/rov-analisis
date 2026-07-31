@@ -2,7 +2,7 @@
 
 > Versión en español de los correos (para tu referencia o contactos hispanohablantes).
 > Los centros oficiales de Europa y Norteamérica operan en inglés; envía la versión en inglés
-> de `correos-reparacion-centros.md` a esos centros. Reemplaza los **[corchetes]** antes de enviar.
+> de `correos-reparacion-EN.md` a esos centros. Reemplaza los **[corchetes]** antes de enviar.
 > Adjunta: `diagnostico/fifish-v6-expert.md` y `resumen/case-summary-en.pdf`.
 
 ---

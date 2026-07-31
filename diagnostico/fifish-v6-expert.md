@@ -376,8 +376,17 @@ Acción decidida: ________________________________________
 
 | Archivo | Descripción |
 |---|---|
-| `case-summary-en.pdf` | Resumen de caso en 1 página (inglés) para adjuntar a los correos |
-| `correos-reparacion-centros.md` | Correos de RMA en inglés (Europa + Norteamérica) |
-| `correos-reparacion-centros-ES.md` | Mismos correos en español |
-| `QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf` | Manual oficial Quick Start V2.2 EN (+ `_extracted-text.txt`) |
-| `QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf` | Guía oficial de mantenimiento de motores y batería |
+| `resumen/case-summary-en.pdf` | Resumen de caso en 1 página (inglés) para adjuntar a los correos |
+| `rma/correos-reparacion-EN.md` | Correos de RMA en inglés (Europa + Norteamérica) |
+| `rma/correos-reparacion-ES.md` | Mismos correos en español |
+| `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf` | Manual oficial Quick Start V2.2 EN (+ `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN_extracted-text.txt`) |
+| `docs/QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf` | Guía oficial de mantenimiento de motores y batería |
+| `Readme.md` | Índice corto bilingüe del proyecto |
+| `README.es.md` / `README.en.md` | Documentación del proyecto en español e inglés |
+| `diagnostico/firmware-open-source-rov.md` | Análisis de firmware open-source alternativo |
+| `diagnostico/ardusub-adaptacion-fifish-v6.md` | Adaptación correlativa ArduSub/ArduPilot |
+| `diagnostico/reporte-reutilizacion-v6.md` | Reporte detallado de reutilización de componentes del V6 |
+| `diagnostico/informe-conversion-completa-rov.md` | Informe práctico de conversión completa del ROV |
+| `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones |
+| `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos |
+| `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub |

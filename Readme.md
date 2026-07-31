@@ -19,6 +19,12 @@
 |---|---|
 | `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo (ES) |
 | `diagnostico/firmware-open-source-rov.md` | 🆕 Análisis de firmware open-source alternativo (ES) |
+| `diagnostico/ardusub-adaptacion-fifish-v6.md` | Adaptación correlativa ArduSub/ArduPilot (ES) |
+| `diagnostico/reporte-reutilizacion-v6.md` | Reporte de reutilización de componentes del V6 (ES) |
+| `diagnostico/informe-conversion-completa-rov.md` | Informe práctico de conversión completa del ROV (ES) |
+| `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones (ES) |
+| `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos (ES) |
+| `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub (ES) |
 | `resumen/case-summary-en.pdf` | Resumen para RMA / RMA summary (EN) |
 | `rma/correos-reparacion-EN.md` | Correos RMA inglés / EN emails |
 | `rma/correos-reparacion-ES.md` | Correos RMA español / ES emails |

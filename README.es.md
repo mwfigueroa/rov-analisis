@@ -79,12 +79,19 @@ La meta práctica es llegar a una derivación clara y defendible ante un centro 
 | `README.es.md` | Documentación completa en español | Este archivo |
 | `README.en.md` | Full documentation in English | English version |
 | `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo, plan de pruebas, plantilla de mediciones, centros de servicio y fuentes | Documento central de análisis |
-| `case-summary-en.pdf` | Resumen de caso de 1 página en inglés | Adjunto para RMA |
-| `correos-reparacion-centros.md` | Correos de RMA en inglés para Europa y Norteamérica | Enviar a centros oficiales |
-| `correos-reparacion-centros-ES.md` | Versión en español de los correos | Referencia hispanohablante |
-| `QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf` | Manual oficial Quick Start V2.2 | Referencia oficial |
-| `QYSEA_V6Expert_QuickStart_Manual_V2.2_EN_extracted-text.txt` | Texto extraído del Quick Start | Búsqueda y citas rápidas |
-| `QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf` | Guía oficial de mantenimiento de motores y batería | Referencia oficial de mantenimiento |
+| `diagnostico/firmware-open-source-rov.md` | Análisis de firmware open-source alternativo | Referencia técnica adicional |
+| `diagnostico/ardusub-adaptacion-fifish-v6.md` | Adaptación correlativa ArduSub/ArduPilot | Diseño técnico propuesto |
+| `diagnostico/reporte-reutilizacion-v6.md` | Reporte de reutilización de componentes del V6 | Evaluación técnica detallada |
+| `diagnostico/informe-conversion-completa-rov.md` | Informe práctico de conversión completa del ROV | Exploración de viabilidad y plan |
+| `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones | BOM técnico candidato |
+| `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos | Compra estimada basada en evidencia |
+| `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub | Comparación por origen y conveniencia |
+| `resumen/case-summary-en.pdf` | Resumen de caso de 1 página en inglés | Adjunto para RMA |
+| `rma/correos-reparacion-EN.md` | Correos de RMA en inglés para Europa y Norteamérica | Enviar a centros oficiales |
+| `rma/correos-reparacion-ES.md` | Versión en español de los correos | Referencia hispanohablante |
+| `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf` | Manual oficial Quick Start V2.2 | Referencia oficial |
+| `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN_extracted-text.txt` | Texto extraído del Quick Start | Búsqueda y citas rápidas |
+| `docs/QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf` | Guía oficial de mantenimiento de motores y batería | Referencia oficial de mantenimiento |
 
 ---
 
@@ -230,12 +237,12 @@ Nota: confirmar aceptación de envío internacional antes de despachar.
 
 Archivos locales:
 - `diagnostico/fifish-v6-expert.md`
-- `case-summary-en.pdf`
-- `correos-reparacion-centros.md`
-- `correos-reparacion-centros-ES.md`
-- `QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf`
-- `QYSEA_V6Expert_QuickStart_Manual_V2.2_EN_extracted-text.txt`
-- `QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf`
+- `resumen/case-summary-en.pdf`
+- `rma/correos-reparacion-EN.md`
+- `rma/correos-reparacion-ES.md`
+- `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN.pdf`
+- `docs/QYSEA_V6Expert_QuickStart_Manual_V2.2_EN_extracted-text.txt`
+- `docs/QYSEA_V6Expert_Motors_Battery_Maintenance_Guide.pdf`
 
 Referencias externas:
 - QYSEA FIFISH V6 Expert: https://www.qysea.com/products/fifish-v6-expert.html
