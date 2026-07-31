@@ -28,6 +28,7 @@
 | `diagnostico/diagrama-ardusub-bloques.md` | Diagrama en bloques ArduSub (ES) |
 | `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub (ES) |
 | `diagnostico/aliexpress-sourcing-nivel-b.md` | Sourcing AliExpress BOM Nivel B (ES) |
+| `diagnostico/bom-mixto-oficial-aliexpress.md` | BOM mixto oficial/AliExpress/banco (ES) |
 | `resumen/case-summary-en.pdf` | Resumen para RMA / RMA summary (EN) |
 | `rma/correos-reparacion-EN.md` | Correos RMA inglés / EN emails |
 | `rma/correos-reparacion-ES.md` | Correos RMA español / ES emails |
