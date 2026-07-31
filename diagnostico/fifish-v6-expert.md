@@ -392,3 +392,4 @@ Acción decidida: ________________________________________
 | `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub |
 | `diagnostico/diagrama-ardusub-bloques.md` | Diagrama en bloques ArduSub |
 | `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub |
+| `diagnostico/aliexpress-sourcing-nivel-b.md` | Sourcing AliExpress BOM Nivel B |
