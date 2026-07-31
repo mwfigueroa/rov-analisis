@@ -1,0 +1,689 @@
+Quick Start Guide
+V1.4
+V2.2
+
+Contents
+Safety and Regulations 1
+Introduction 2
+ROV Definition 2
+RC Definition 3
+Tether Spool Definition 4
+Accessories 5-7
+Preparation 9-15
+Check and App Install 9
+Set-up 9-13
+Hardware connection 9-11
+Software connection 12
+ROV Sensor Cal, Deploy, and Retrieve 13
+Controlling 14-15
+Definition 14
+Controlling modes 15
+FIFISH App 16-29
+Operation interface 16-17
+System Setting 18-19
+Controlling Preferences 20-21
+ROV Sensor Calibration 22
+Camera 23
+Features 24-27
+Camera 24
+Auto Pilot 2nd Gen 25-26
+LIVE Streaming 27
+HDMI Box 2.0 28-29
+After-Dive 30-32
+MicroSD Protective Cap Removal/Maintenance 30
+Motors Maintenance (after every dive) 31
+Battery Maintenance 31
+Camera Firmware Upgrade     31
+ROV Charging 32
+RC Charging 32
+Specifications 33-35
+ROV 33
+MicroSD card requirement 33
+Q-Interface 33
+Camera 34
+LED Light 34
+Tether and Spool 35
+Remote Controller 35
+Charger 35
+Disclaimer 36
+Safety and Regulations
+1
+Operating FIFISH products requires training and practice. 
+Please read through this document before operating in 
+water.
+Do NOT touch the running 
+propeller
+Avoid overheating of 
+motors, do NOT run the 
+thrusters in air for over 30 
+seconds
+Do NOT throw the ROV 
+when deploying into the 
+water
+Do NOT look directly to 
+the LEDs, and do NOT 
+touch the LEDs when they 
+are ON
+Beware of the 
+environment while 
+operating the ROV (tide, 
+water level, water traffics, 
+etc.)
+Avoid the reefs, rocks, 
+seaweeds, fishline or other 
+objects that may cause 
+damage to or 
+entanglement of the ROV 
+or tether
+Be part of marine 
+protection and 
+conservation for the local 
+coral and marine life
+Maintain after dive, check 
+the, Maintenance Guide in 
+page 30-32
+ 
+Definition, ROV
+2
+FIFISH V6 Expert ROV
+1. 4K UHD Underwater Camera
+2. 3,000 lumens LED × 2
+3. Vector Thruster × 6
+4. Venting Holes
+5. Rear Wing 1
+6. MicroSD Card Slot
+7. Mounting Port
+8. FIFISH Q-Interface 2
+9. ROV Tether Port 3
+NOTE:
+1. Do NOT shake or swing while holding the rear wing.
+2. Hook tether’s securing loop on the stem of rear wing when connect (See Preparation and 
+Connection / Hardware Connection  in page 9-11) 
+3. The all ports including FIFISH Q-Interface™ shall be clean and dry at all time.
+7
+1 2
+2
+4
+5
+6
+8
+3
+3
+9
+3
+ 
+Definition, RC
+3
+RC (Remote Controller)
+1. ON/OFF
+2. Depth Holding
+3. Lock/Unlock
+4. Left Control Stick
+5. Right Control Stick
+6. Right Wheel
+7. Left Wheel
+8. Video (Record/Stop)
+9. Control Mode (Attitude / Sport / Combination)
+10. Tether Port
+11. Ethernet Port (mini USB)
+12. LED Brightness (OFF / 1 / 2）
+13. Photo (Snap) 2
+14. Charging Port
+15. microSD Card Port
+16. Clamp Release Button
+17. Clamp for Smart Device
+1
+23
+4 5
+6 7
+89
+1011
+1213
+14
+15
+1617
+ 
+NOTE:
+Please avoid submerging the tether spool in water. The roller part of the tether 
+spool is not waterproof, and improper handling may result in damage to the reel.
+Definition, Tether Spool
+4
+Spool and Tether
+1. Spool Handle
+2. Tether Regulator
+3. Spool Frame
+4. Tether ROV Plug
+5. Foldable Handle
+6. Tether RC Plug (3.5mm AUX plug)
+1
+2
+3
+4
+5
+6
+Definition, Accessories
+5
+2D Image Sonar
+Scan beyond visual 
+distance or visibility
+U-QPS
+Underwater position in 
+real time, and route plan 
+search
+Robotic Arm
+Grab & retrieve subjects 
+below the surface
+Water Sampler (500 mL)
+Collect water sample from 
+certain depth and position
+Definition, Accessories
+6
+Q-Camera with LEDs
+Provide secondary view 
+for underwater survey
+pH Sensor
+Monitor pH in real-time 
+
+Definition, Accessories
+7
+HDMI Box 2.0
+Download original 
+resolution videos when 
+recording, LIVE output 
+HDMI signal
+RC Sun Hood
+Provide shade for tablets
+Edge Box
+Enable to remote control 
+globally 
+There are more 
+accessories on the way.
+For more information 
+about add-ons or 
+accessories, contact our 
+local authorized dealers 
+for an on-site 
+demonstrations.
+Checking List
+1. Gears checking
+2. Battery is full (ROV, RC, cell/tablet)
+3. ROV sensor calibration 1
+4. Smart device compatibility 2
+5. Enough memory for recording/picture
+6. Team role setting (pilot, tether man, guide)
+7. Entanglement threats, such as, the boat engine, underwater structures, and corals 
+etc.
+NOTE:
+1. If you travel to elevated lakes, low land lakes, or air pressure has changed. Do a 
+ROV sensor calibration is highly recommended (Check ROV Sensor Calibration in 
+page 22)
+2. The best compatible smart devices list in, in FIFISH App, help/FAQ/Before Dive, 
+#6
+FIFISH App download and Installations
+Option 1. Scan the QR code below to download FIFISH App.
+Option 2. Search the FIFISH on App Store (iOS) or Google Play (Android).
+Option 3. Go to QYSEA's website at https://www.qysea.com/support/app-download/
+Preparation, Check and App Install
+8
+
+2. Hardware Connection
+Overview of hardware connection
+2.1. Plug the tether (3.5 mm head) into remote controller
+Preparation, Set-up, Hardware
+9
+2.2. Take off the protective cap, tie the knot around the rear wing
+2.3. Plug the ROV Plug into the ROV Tether Port (finger tight)
+2.4. Turn ON the RC. Press and hold the ON/OFF button (3 seconds) 
+• RC will play 7 chimes from low to high (Do, Re, Mi, Fa, Sol, La, Ti)
+• ROV will turn on automatically, and play 5 chimes (Do, Re, Mi, Do, Mi)
+Preparation, Set-up, Hardware
+10
+2.5. Take off the protect cap, tie the knot around the rear wing
+• The “ON/OFF”, “Depth Holding" and "LOCK/UNLOCK” will flash and rotate 
+clockwise, which indicates "Ready to be connected“
+• In about 30 seconds, the "ON/OFF” and "LOCK/UNLOCK” buttons will stay 
+solid that indicates the hardware connection successfully
+Preparation, Set-up, Hardware
+11
+3. Software Connection
+3.1. Smart device connect with the RC's Wi-Fi (5 GHz)
+• Find the Wi-Fi network name “FIFISHRC_xxxx”
+• The password is "1234567890”
+3.2. Open FIFISH App, then press “Go Dive”
+• Allow access to photo albums, location, and notifications
+• Even the network did not connect to internet, select the “Keep Trying 
+WLAN” for iOS user, “Stay Connected” for Android user.
+NOTE
+The operation interface will be introduced in chapter FIFISH App, page 16-17
+Preparation, Set-up, Software
+12
+4. ROV Sensor Calibration (Check the FIFISH App Charter, ROV Sensor Calibration 
+Page 22)
+4.1. Go to General Setting 
+4.2. Select the ROV Sensor Icon
+4.3. Follow the hit on FIFISH App step by step, first Gyro-Acce then Mag
+4.4. Reboot ROV in FIFISH App, and Power ON/OFF RC if necessary
+5. Deploy the ROV
+• ONLY pulling on the tether to deploy the ROV into the water. 
+• Unlock the thrusters then start to dive.
+NOTE
+The depth shall greater than 1 meter (about 3 feet) for better operation 
+experiences.
+6. Retrieve
+6.1. LOCK the thrusters
+6.2. STOP RECORDING the video before closing the FIFISH App
+6.3. ONLY PULLING on the tether to retrieve the ROV
+Preparation, ROV Sensor Cal, Deploy and Retrieve
+13
+
+Definition of Controlling
+The FIFISH PRO V6 Expert uses the patented Smart Thruster Array™ to ensure the 
+ultimate maneuverability and delivers the 6 DOF (degree of freedom).
+• V6 Expert can move in descend & ascend, left and right, forward and backward.
+• V6 Expert can rotate in 360 yaw (z-axis), 360 pitch (y-axis), 360 roll (x-axis).
+We have simplified the Left Joystick, Right Joystick, Left Wheel and Right Wheel into 
+the following symbol. The arrows on RC indicate the command and the arrows on ROV 
+indicate the actual movements. 
+NOTE: 
+From the FPV (first person view) the blue is rolling counterclockwise and black is 
+rolling clockwise, and the rolling can activate in Sport or Combination Mode.
+Controlling, Definition
+14
+Controlling Modes
+FIFISH PRO V6 Expert supports 3 modes for control: A, S, and C. 
+A is Attitude mode, S is Sport mode, C is the Combination mode.
+Attitude Mode
+Attitude mode is designed for beginners. The ROV will not roll in Attitude mode. 
+The ROV will stay in same depth moving when depth holding is ON. Even with pitch 
+angle, the depth will be the same.
+Sport Mode
+Sport mode is designed for skillful pilots. Sport mode will enable the rolling freedom, 
+so, you will access all 6 degree of freedom of V6 Expert. Controlling and moving 
+based on the FPV (Frist Person View), do not operate in third person view. The ROV 
+will only stay in the same depth with no command input, when depth holding ON.
+Combination Mode
+Combination mode activate the head tracking controlling via the VR Goggle, which 
+allow pilot to use the VR Goggle to pitch, roll and yaw. Combination mode delivers 
+the intuitive control and immersive experiences. Combination mode supports head 
+tracking and remote controller working together.
+Accessories Attached
+The right wheel will ONLY be working in Attitude mode or Combination mode for 
+motor driven accessories. For example, robotic arm, water sampler, robotic fish 
+clamp, and compass ruler, and sludge sampler etc.
+Controlling, Controlling Modes
+15
+FPV Interface in FIFISH App
+1. Status
+2. Navigation Information
+3. Additional Features
+4. General Settings
+5. Image/Video Setting Shortcut
+6. Image/Video Button
+7. Navigation Chart
+NOTE:
+The additional features will be active when relevant accessories are attached to 
+the ROV.
+FIFISH App, Operation Interface
+1
+2
+3
+4
+5
+6
+7
+16
+Note: This FIFISH App interface is 
+iOS 4.1.0. In order to provide better 
+user experiences, QYSEA software 
+team will keep trimming the FIFISH 
+App. For the latest APP 
+introduction, please go to official 
+website to download the relevant 
+user manual or contact the 
+technical support team.
+       
+        Status
+1. Current System Status
+2. Depth Holding ON/OFF
+3. Control Mode
+4. Water Temperature in C/F
+5. Pilot or Spector Status
+6. Controlling Preference
+7. RC’s Wi-Fi Signal
+8. ROV’s Battery in Percentage
+Navigation Information
+9. ROV Current Depth
+FIFISH App, Operation Interface
+1 2 3 4 5 6 7 8
+9
+10
+11
+12
+13
+15 16 17 18 19
+14
+Navigation Chart
+10. Pilot’s Heading
+11. Compass
+12. ROV’s Heading in Degrees
+13. Posture Indicator
+Camera Setting Shortcut
+14. Camera Setting
+15. ISO
+16. White Balance
+17. Exposure Value
+18. Resolution Frames Rate
+19. Remaining Time / Pics
+20. Toolbox
+17
+20
+General Settings, Select System Setting Icon         in 1st  column
+• If you have 2 devices connect to the RC, Click “Acquire Control” to get 
+access controlling and adjusting settings
+• ONLY the “Pilot” can manipulate the settings, such as, watermarks, control 
+preferences, camera settings etc.
+• The “Watermark” ON will record to video or write on photo, “Watermark” 
+OFF then no trace on video or photo
+• Watermark in Time, FIFISH Logo, ROV Depth, Water Temperature
+FIFISH App, System Setting
+18
+Scroll down the system setting page, the system version information will show up
+• The App Version is the FIFISH App version in your cell or tablet
+• The RC Version is the RC’s motherboard version
+• WiFi Version is the RC’s Wi-Fi module version
+• ROV Version is the ROV’s current software version
+• Camera Version is the camera module software version
+• ROV SN is the identical SN for this ROV
+NOTE:
+Screen shot of these versions for remote technical support when you are facing 
+any issues.
+FIFISH App, System Setting
+19
+
+20
+Controlling Preferences
+General Settings, Select Controlling Preferences Icon        in 2nd column
+• Click “Control Mode”, the default is ROV-USA Control Mode, you can select 
+your preferences if you like
+• Click “Confirm”, after setting
+**As for advance level pilot seek for customized setting demo. Please check FIFISH 
+authorized local Dealer or Service Center for more details and training programs.
+FIFISH App, Controlling Preferences
+
+Control Curvature
+For the advance level pilot, the curvature setting can provide more FUN and 
+ACCURATE operating experiences.
+Set the Move & Rotate
+• Adjusting the curvature (set the center sector output sensitivity)
+• Adjusting the attenuation (set the maximum output)
+**As for advance level pilot seek for explore curvature setting tips. Please check 
+FIFISH authorized local Dealer or Service Center for more details and training 
+programs.
+FIFISH App, Controlling Preferences
+21
+ROV Sensor Calibration
+Select the ROV Sensor Icon        in 3rd column
+• Follow the hit on FIFISH App step by step, first Gyro-Acce then Mag
+• Reboot ROV in FIFISH App, and Power ON/OFF RC if necessary
+FIFISH App, ROV Sensor Calibration
+22
+1st 
+2nd 
+3rd 
+The Main Camera Internal Storage is ROV’s main camera internal memory status.
+• Click “Main camera internal storage format” will erase the internal 
+memory of main camera
+• Click “restore factory settings” will reset to default camera settings
+FIFISH App, Camera
+23
+
+FIFISH App, Features, Camera
+1 2 3
+4
+5
+6
+8
+9
+10
+11
+Image Settings
+1. Exposure and WB
+2. Video Setting
+3. Camera General Setting
+4. Resolution
+5. Image Stabilization
+6. Light Meter Mode
+7. FOV Settings
+Camera General Setting
+7. Live Resolution on FPV
+8. Live Bitrate on FPV
+9. Color Encoding
+10. Video Format
+NOTE: Shortcut camera 
+setting will have the same 
+results.
+7
+24
+25
+Assist Driving 2nd Gen
+The Assist Driving 2nd Gen is able programable auto moving commands.
+1. Press the "Toolbox" and select Assist Driving to turn ON 
+2. Select moving behavior
+3. Set speed of such segment
+4. Set time of such segment
+5. Program next segment
+6. Click "Run” to activate the Assist Driving 2nd Gen
+FIFISH App, Features, Assist Driving
+
+Assist Driving 2nd Gen
+Schematic diagram of the assist driving function 
+FIFISH App, Features, Assist Driving
+26
+LIVE Streaming
+Board casting directly on YouTube, Facebook or other social media network.1
+1. Generate a Stream Key and Stream URL on YouTube or Facebook
+2. Click the LIVE           icon in “Toolbox” 
+3. Past the Stream URL and Stream Key in column
+4. Select the LIVE quality (High, Medium, and Low) 2, 3
+5. Click “Start Live Streaming”
+NOTE: 
+1. This feature will request to use the iOS devices. For example, iPhone or 
+iPad SIM card version. 
+2. LIVE stream feature will consume your Cellular Data, make sure you have 
+enough Cellular Data in your data plan.
+3. LIVE stream quality is depending on the local 4G or 5G network speed.
+FIFISH App, Features, LIVE Streaming
+27
+
+28
+HDMI Box 2.0, Download to Flash Drive
+• HDMI Box 2.0 also capable to download the original resolution video from ROV 
+while recording.1
+• HDMI Box 2.0 will enable to display on a HDTV or transmitter for TV shows. 
+1. Connect HDMI Box, and Insert a flash drive 1, 2
+2. Click the HDMI icon 
+3. The default is Download Mode, the new video will automatically download to 
+flash/portable drive
+NOTE:
+1. Download and Display mode CANNOT work at same time, more information check 
+the HMDI Box instructions
+2. Format in FAT32 or exFAT, read and write speed 100 MB/s or higher, USB 3.0
+3. Flash drive storage 128 / 256 / 512 GB,  portable drive 1 / 2 TB
+FIFISH App, Features, HDMI Box
+
+HDMI Box 2.0, HDMI Output
+• HDMI Box 2.0 will enable to stream to a HDTV or transmitter for TV shows. 1
+1. Connect to the HDMI Display or stream transmitter broadcasting devices
+2. Click the icon         to active Display Mode
+NOTE:
+1. Download and Display mode CANNOT work at same time, more information 
+check the HMDI Box instructions
+2. The default resolution is 1080P 60fps when HDMI Box is on. (PLEASE DO 
+NOT CHANGE THE RESOLUTION ON FIFISH APP)
+3. The HDMI Output latency is about 500 ms
+FIFISH App, Features, HDMI Box
+29
+
+MicroSD Protective Cap Removal
+1. Remove the protective cover from the SD card protective cap[a].
+2. Attach the protective cover to the SD card protective cap, then turn 
+counterclockwise to loosen the cap and remove the SD card[b].
+MicroSD Protective Cap Maintenance
+1. Keep the protective cap clean and dry.
+2. Apply a thin layer of grease to the interior slot (Red area).
+After-Dive
+30
+a b
+
+Motors Maintenance (After Every Dive)
+1. Connect the RC to V6 Expert and open the FIFISH App (see Hardware Connection 
+section, in Quick Start Guide).
+2. Make sure every motor is immersed inside fresh water, see the picture (vertical 
+soaking in bucket will have same results).
+3. Open FIFISH App, homepage, Click "Help" on the bottom right corner. Click 
+"Maintain/Thrusters", then press "Start”. All motors will rotate slowly.
+4. In about 10 mins this cleaning program will stop.
+5. Air dry V6 Expert in the cool place and avoid direct sunlight.
+Battery Maintenance
+1. Keep 50% to 60% battery level before long term storage.
+2. Charge to full once every 90 days.
+3. If you haven't used FIFISH V6 EXPERT for more than 30 days, you need to use a 
+charger to activate it. 
+Camera Firmware Upgrade
+1. Please ensure that the SD card is inserted in the ROV before performing the camera 
+firmware upgrade to avoid failure.
+After-Dive
+31
+
+ROV Charging
+RED LED indicator illuminates while charging and GREEN LED indicator illuminates 
+while fully charged.
+RC Charging
+Flashing ON/OFF button, RC is charging 
+White steady ON/OFF button, RC is fully charged.
+After-Dive
+Red, less than 30%
+Yellow, 30% to 70%
+White, 70% or higher
+32
+ROV
+MicroSD Card requirement
+Q-Interface
+Specifications
+Dimension 383 mm(L) × 331 mm(W) × 143 mm(H)
+Weight 4.6 kg
+Depth Rating 100 meters
+Speed 3.0 Knots (1.5 m/s), max speed in still water
+Thrusters Q-Motor Tech × 6 4 × Vector + 2 × Horizontal
+Maneuverability 6 DoF (Degree of Freedom)
+Moving Sway Left / Right
+Surge Forward / Backward
+Heave Up / Down
+Rotation 360° in Pitch, Yaw and Roll *
+Posture Lock™ ± 1.0° accuracy Either in static or moving
+Depth Lock™ ± 1 cm accuracy Keep ROV suspending
+Operating Temperature -10°C to - 60°C 14°F to 140°F
+Battery 1 to 4 hours run time (Dependent on Work Environment)
+156 Wh Rated Capacity
+1 Hour Quick Charge (90%)
+Panasonic 21700 Li-ion
+Read / Write Speed 80 MB/s or up (Write)
+Capability 64/128/256/512 GB
+Format exFAT
+Recommendations SanDisk (Ultra/Extreme/Extreme Pro) or Samsung, Kingston, 
+Toshiba’s microSD card with similar speed
+Port Number 1 port
+Material 316 Stainless Steel
+Output Voltage and Current 9.0 ~ 12.0 V, 5 A max
+Network Bandwidth 100 Mbps
+33
+Camera
+LED Light
+Specifications
+Image Sensor 1/2.3” CMOS
+Pixels 12 Mega Pixels Effective Pixels
+ISO Range 100-3,200 Auto / Manual
+Lens 166 Filed of View (in air)
+f/2.5 Aperture
+0.3 m Minimum Focusing Distance
+Shutter Speed 5 to 1/5000 second Auto / Manual (Electronic)
+Burst Shooting 1 / 3 / 5 / 10 Frames
+WB (White Balance) 2500 to 7500 K for Seawater/Freshwater; Auto / 
+Manual
+EV (Exposure Compensation) - 3.0  ~ + 3.0 EV Auto / Manual
+Video Resolution 4K UHD 25/30 fps
+1080P FHD 25/30/50/60/100/120 fps
+720P HD 25/30/50/60/100/120/200/240 
+fps
+Video Encode H.264
+Image Stabilization EIS (Electronic Image Stabilization)
+Photo Resolution 4000 × 3000, 3840 × 2160 
+Photo Format JPEG, DNG
+Color System NTSC and PAL
+Storage microSD Standard 128GB (expandable up to 256GB)
+Brightness 6,000 lumens
+CCT (Correlated Color Temp.) 5,500 K
+Beam Angle 120°
+Dimming OFF, 1, and 2
+34
+Tether and Spool
+Remote Controller (RC)
+Charger
+Specifications
+ROV 100-240 V, 50/60 Hz, 3.0 A Max Input
+12.6 V ⎓ 10.0 A Output
+RC 100-240 V, 50/60 Hz, 0.5A MAX Input
+  5.0 V ⎓   3.0 A Output
+Tether Length 100 meters (Standard Package)
+Tether Diameter 4.6 mm
+Breaking Force 100 kgf
+Spool Dimension 238 mm × 213 mm × 205 mm
+Spool Weight 2.08 kg
+Wireless 5GHz WiFi: 802.11a/n/ac
+Battery Life Up to 4 hours
+microSD Card Slot microSD card format in FAT32 or exFAT (≦128GB), class 10 or higher 
+write and read speed.
+miniUSB Port Bandwidth 100 Mbps
+35
+We provide customers with after-sale services, excluding the following circumstances,
+• Crashes damage caused by non-manufacturing factors, including but not limited to, pilot errors.
+• Damage caused by unauthorized modification, disassembly, or shell opening not in accordance 
+with official instructions or manuals.
+• Damage caused by improper installation, incorrect use, or operation not in accordance with 
+official instructions or manuals.
+• Damage caused by a non-authorized service provider.
+• Damage caused by unauthorized modification of circuits and mismatch or misuse of the battery 
+and charger.
+• Damage caused by dives which do not follow instruction and manual recommendations.
+• Damage caused by operation in bad water conditions (i.e. strong currents, huge waves, etc.)
+• Damage caused by operating the product in an environment with electromagnetic interference 
+(i.e. in mining areas or close to radio transmission towers, caves, muddy condition, radiations, 
+tunnels, etc.).
+• Damage caused by operating the product in an environment suffering from interference from 
+other wireless devices (i.e. transmitter, video-downlink, Wi-Fi signals, etc.).
+• Damage caused by a forced dive when components have aged or been damaged.
+• Damage caused by reliability or compatibility issues when using unauthorized third-party parts.
+• Damage caused by operating the unit with a low-charged or defective battery.
+• Uninterrupted or error-free operation of a product.
+• Loss of, or damage to, your data by a product.
+• Any software programs, whether provided with the product or installed subsequently.
+• Failure of, or damage caused by, any third-party products, including those that QYSEA may 
+provide or integrate into the QYSEA product at your request.
+• Damage resulting from any non-QYSEA technical or other support, such as assistance with "how-
+to” questions or inaccurate product set-up, installation, and firmware upgrade.
+• Damage caused by operating the ROV in the sensitive zone (military, natural resource protection 
+zoning, marine conservation and ocean conservation, etc.)
+• Damage caused by unpredictable factors (current, cave collapse, swallow by animal, etc.)
+• Products or parts with an altered identification label or from which the identification label has 
+been removed.
+• The presence of water droplets or water stains on the ROV may be due to the running tests in 
+water performed at our factory. This will not affect the features and function of FIFISH underwater 
+robot.
+• Please check the QYSEA After-sales Policy published by official website 
+(https://www.qysea.com/support/after-sales/) for more detail.
+For more information, please check our website for tuition videos, or read FAQ in FIFISH 
+APP/help/FAQ.
+For latest version of use guide/manuals and other instructions, check on our website. 
+https://www.qysea.com/support/user-manual/
+Disclaimer
+36

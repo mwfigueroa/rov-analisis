@@ -1,0 +1,21 @@
+# Archivos grandes / binarios
+*.exe
+*.dll
+*.so
+*.dylib
+
+# PDFs oficiales (pesados) — incluirlos manualmente si se desea
+# Descomenta si prefieres no versionar los PDFs:
+# docs/*.pdf
+
+# Sistema
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Temp
+*.tmp
+*.log
