@@ -34,6 +34,10 @@
 - Centros de reparación autorizados identificados (EU + Norteamérica); usuario en **Argentina** → §19.
 - Generados correos de RMA (ES/EN) y resumen de caso en PDF → §20.
 
+**Avance de la sesión (2026-07-31):**
+- 🆕 Análisis de firmware open-source alternativo (ArduSub, Betaflight, INAV) → documento separado: [`firmware-open-source-rov.md`](firmware-open-source-rov.md)
+- **Conclusión:** ArduSub es la única opción viable, pero migrar el V6 Expert es impractico. El problema es de hardware (thruster), no de firmware.
+
 **Decisión de ruta:** (a) completar diagnóstico **no destructivo** (giro a mano + multímetro) para afinar el alcance y, luego, (b) **enviar a centro autorizado** para desarmado, reparación del thruster y **re-certificación del sellado a 100–200 m**. No se recomienda abrir el casco sin certificación de estanqueidad.
 
 ---
