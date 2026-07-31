@@ -394,3 +394,4 @@ Acción decidida: ________________________________________
 | `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub |
 | `diagnostico/aliexpress-sourcing-nivel-b.md` | Sourcing AliExpress BOM Nivel B |
 | `diagnostico/bom-mixto-oficial-aliexpress.md` | BOM mixto oficial/AliExpress/banco |
+| `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B |
