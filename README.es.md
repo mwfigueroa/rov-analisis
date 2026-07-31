@@ -86,6 +86,8 @@ La meta práctica es llegar a una derivación clara y defendible ante un centro 
 | `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones | BOM técnico candidato |
 | `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos | Compra estimada basada en evidencia |
 | `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub | Comparación por origen y conveniencia |
+| `diagnostico/diagrama-ardusub-bloques.md` | Diagrama en bloques ArduSub | Arquitectura de componentes |
+| `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub | Stack de software/hardware |
 | `resumen/case-summary-en.pdf` | Resumen de caso de 1 página en inglés | Adjunto para RMA |
 | `rma/correos-reparacion-EN.md` | Correos de RMA en inglés para Europa y Norteamérica | Enviar a centros oficiales |
 | `rma/correos-reparacion-ES.md` | Versión en español de los correos | Referencia hispanohablante |

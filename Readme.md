@@ -25,6 +25,8 @@
 | `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones (ES) |
 | `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos (ES) |
 | `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub (ES) |
+| `diagnostico/diagrama-ardusub-bloques.md` | Diagrama en bloques ArduSub (ES) |
+| `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub (ES) |
 | `resumen/case-summary-en.pdf` | Resumen para RMA / RMA summary (EN) |
 | `rma/correos-reparacion-EN.md` | Correos RMA inglés / EN emails |
 | `rma/correos-reparacion-ES.md` | Correos RMA español / ES emails |

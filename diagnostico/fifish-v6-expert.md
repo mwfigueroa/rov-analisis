@@ -390,3 +390,5 @@ Acción decidida: ________________________________________
 | `diagnostico/componentes-nivel-b-especificaciones.md` | Componentes Nivel B con especificaciones |
 | `diagnostico/bom-final-nivel-b.md` | BOM final Nivel B con links y costos |
 | `diagnostico/matriz-proveedores-rov.md` | Matriz de proveedores ROV/ArduSub |
+| `diagnostico/diagrama-ardusub-bloques.md` | Diagrama en bloques ArduSub |
+| `diagnostico/rpi4-imagen-interfaces-firmware.md` | Imagen RPi4, interfaces y firmware ArduSub |

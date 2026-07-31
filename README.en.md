@@ -86,6 +86,8 @@ The practical goal is to reach a clear, defensible referral to an authorized ser
 | `diagnostico/componentes-nivel-b-especificaciones.md` | Level B components with specifications | Candidate technical BOM |
 | `diagnostico/bom-final-nivel-b.md` | Final Level B BOM with links and costs | Evidence-based purchase estimate |
 | `diagnostico/matriz-proveedores-rov.md` | ROV/ArduSub supplier matrix | Comparison by origin and suitability |
+| `diagnostico/diagrama-ardusub-bloques.md` | ArduSub block diagram | Component architecture |
+| `diagnostico/rpi4-imagen-interfaces-firmware.md` | RPi4 image, interfaces and ArduSub firmware | Software/hardware stack |
 | `resumen/case-summary-en.pdf` | One-page English case summary | RMA attachment |
 | `rma/correos-reparacion-EN.md` | English RMA emails for Europe and North America | Send to official centers |
 | `rma/correos-reparacion-ES.md` | Spanish version of the emails | Spanish-speaking reference |
