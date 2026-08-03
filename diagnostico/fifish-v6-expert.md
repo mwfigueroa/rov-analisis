@@ -7,7 +7,7 @@
 
 ## 0. Estado actual / bitácora
 
-**Última actualización:** 2026-07-30 (2.ª revisión: documentación oficial revisada + derivación a servicio)
+**Última actualización:** 2026-08-03 (3.ª revisión: reset por software y falla latcheada tras motor atascado)
 
 **Fase del proceso:** diagnóstico *razonado* completo — **pendiente de mediciones físicas**. No se ha hecho ninguna intervención ni reparación todavía.
 
@@ -37,6 +37,11 @@
 **Avance de la sesión (2026-07-31):**
 - 🆕 Análisis de firmware open-source alternativo (ArduSub, Betaflight, INAV) → documento separado: [`firmware-open-source-rov.md`](firmware-open-source-rov.md)
 - **Conclusión:** ArduSub es la única opción viable, pero migrar el V6 Expert es impractico. El problema es de hardware (thruster), no de firmware.
+
+**Avance de la sesión (2026-08-03):**
+- Se reporta un thruster **completamente atascado**; tras limpieza/verificación vuelve a girar a mano, pero el ROV queda **bloqueado a nivel sistema** incluso después de reiniciar.
+- Se agrega protocolo de **reset por software disponible públicamente** y criterio de **falla latcheada** en §7A.
+- **Conclusión operativa:** si re-bloquea inmediatamente después del reset completo con batería retirada, no seguir forzando unlock; medir y derivar a servicio.
 
 **Decisión de ruta:** (a) completar diagnóstico **no destructivo** (giro a mano + multímetro) para afinar el alcance y, luego, (b) **enviar a centro autorizado** para desarmado, reparación del thruster y **re-certificación del sellado a 100–200 m**. No se recomienda abrir el casco sin certificación de estanqueidad.
 
@@ -132,6 +137,70 @@ Motor de 3 fases con una **fase abierta o de alta resistencia** (corrosión sali
 1. **Dejar de encender/probar en ciclos** — con motor atascado o mal conmutado, cada intento mete corriente de rotor bloqueado a bobinas/ESC y **acumula daño y calor**.
 2. **No probar en aire** — refrigeración y carga son por agua.
 3. **Vigilar la batería** — si el punto tibio está **sobre la bahía de batería** y vio agua salada, una celda húmeda/dañada bajo carga = **riesgo de fuga térmica**. Retirar, guardar en sitio seguro/ignífugo, inspeccionar.
+
+---
+
+## 7A. Secuencia de reset por software y falla latcheada (motor atascado → sistema bloqueado)
+
+> Contexto agregado 2026-08-03: un thruster quedó **completamente atascado**; después de limpieza/verificación vuelve a girar a mano, pero el ROV queda **bloqueado a nivel sistema** incluso tras apagar y reiniciar.
+> Punto clave: en la documentación pública QYSEA **no hay un reset específico de falla de thrusters**. Lo disponible es LOCK/UNLOCK normal, reboot del ROV desde la app, calibración de sensores con reboot, restore factory settings **solo de cámara**, y Maintain/Thrusters para limpieza con motores sumergidos.
+
+### 7A.1 Antes de intentar reset
+
+- Hacerlo con hélices despejadas y sin posibilidad de empuje; preferentemente en agua dulce o con hélices retiradas si el procedimiento lo permite.
+- No usar el reset para forzar un motor que todavía está trabado, áspero o con medición anormal.
+- Si hay olor a quemado, punto caliente, hinchamiento de batería o alarma de fuga activa, no reenergizar.
+
+### 7A.2 Secuencia segura
+
+1. **Corte total de energía**
+   - LOCK thrusters.
+   - Cerrar FIFISH App.
+   - Apagar RC.
+   - **Retirar batería** y esperar **10 minutos**.
+   - Motivo: un reboot sin desconectar batería puede no limpiar ESC/BMS latcheados por overcurrent.
+
+2. **Verificación física rápida**
+   - Los 6 thrusters giran libres a mano.
+   - No hay sal blanca, corrosión verde/azul, olor a quemado ni punto caliente.
+   - Domo/zona de sensor de humedad seco; si hubo condensación, usar desecante y confirmar en app que no hay alarma de fuga/humedad.
+
+3. **Medición antes de reenergizar**
+   - Sospechoso vs sano: **fase-fase** baja y equilibrada.
+   - **Aislamiento fase-carcasa/tierra** alto/abierto.
+   - Si fase-fase está abierta/desbalanceada o aislamiento está bajo, no es software: detener y derivar.
+
+4. **Reenergizado controlado**
+   - Batería sana, con carga suficiente y sin signos de daño.
+   - RC ON; esperar botones **ON/OFF** y **LOCK/UNLOCK** sólidos.
+   - Conectar app y entrar con **Go Dive**.
+   - Capturar System Setting: App/RC/WiFi/ROV/Camera/SN y cualquier alarma/código.
+
+5. **Reset disponible por app**
+   - General Setting → ROV Sensor → calibrar **Gyro-Acce** y luego **Mag**.
+   - **Reboot ROV** desde la app.
+   - Power ON/OFF RC si la app lo solicita.
+   - Confirmar que el dispositivo tiene control (**Acquire Control** si hay más de un dispositivo).
+   - Intentar **Unlock una sola vez**.
+
+6. **Qué no usar como reset de motores**
+   - **Restore factory settings** de cámara: solo resetea ajustes de cámara.
+   - Formateo de almacenamiento interno de cámara: no está relacionado con thrusters.
+   - Maintain/Thrusters: solo si todos los motores giran libres y están **sumergidos en agua dulce**; no usarlo para destrabar un motor.
+
+### 7A.3 Interpretación del resultado
+
+| Resultado | Lectura | Acción |
+|---|---|---|
+| Tras corte total y reboot, desbloquea y opera normal | Falla latcheada transitoria o estado de protección reseteado | Registrar, probar suave en agua dulce y monitorear temperatura/consumo |
+| Desbloquea pero re-bloquea al acelerar o al exigir ese thruster | Canal ESC/motor sigue dañado o con resistencia anormal | No insistir; medir y derivar |
+| Re-bloquea inmediatamente al conectar o al dar Unlock | Falla activa: ESC, fase, aislamiento, leak sensor, batería/BMS o temperatura | No más ciclos de unlock; captura de app + servicio |
+| Bloqueo acompañado de alarma de fuga/humedad | El sistema inhibe por seguridad hasta que la alarma se limpie | Secar, verificar sensor, no forzar motores |
+| Motor gira a mano pero con corriente tiembla/calienta | Mecánico resuelto, pero eléctrico no: fase/conector/ESC | Reparación de canal o reemplazo según medición |
+
+### 7A.4 Regla de corte
+
+Si después de **corte total con batería retirada + verificación de giro libre + medición correcta + reboot/calibración** el ROV vuelve a bloquear inmediatamente, se considera **falla latcheada de hardware**. No seguir probando unlock. Registrar evidencia y pasar a RMA/servicio.
 
 ---
 
