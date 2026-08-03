@@ -395,3 +395,4 @@ Acción decidida: ________________________________________
 | `diagnostico/aliexpress-sourcing-nivel-b.md` | Sourcing AliExpress BOM Nivel B |
 | `diagnostico/bom-mixto-oficial-aliexpress.md` | BOM mixto oficial/AliExpress/banco |
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B |
+| `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS |

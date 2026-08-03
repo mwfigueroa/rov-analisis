@@ -91,6 +91,7 @@ La meta práctica es llegar a una derivación clara y defendible ante un centro 
 | `diagnostico/aliexpress-sourcing-nivel-b.md` | Sourcing AliExpress BOM Nivel B | Búsquedas y riesgos por componente |
 | `diagnostico/bom-mixto-oficial-aliexpress.md` | BOM mixto oficial/AliExpress/banco | Variantes y presupuesto |
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B | Cronograma y gates |
+| `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS | Puertos, endpoints y servicios |
 | `resumen/case-summary-en.pdf` | Resumen de caso de 1 página en inglés | Adjunto para RMA |
 | `rma/correos-reparacion-EN.md` | Correos de RMA en inglés para Europa y Norteamérica | Enviar a centros oficiales |
 | `rma/correos-reparacion-ES.md` | Versión en español de los correos | Referencia hispanohablante |

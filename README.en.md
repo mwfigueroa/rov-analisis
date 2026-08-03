@@ -91,6 +91,7 @@ The practical goal is to reach a clear, defensible referral to an authorized ser
 | `diagnostico/aliexpress-sourcing-nivel-b.md` | AliExpress sourcing for Level B BOM | Searches and component risks |
 | `diagnostico/bom-mixto-oficial-aliexpress.md` | Mixed official/AliExpress/bench BOM | Variants and budget |
 | `diagnostico/project-schedule-nivel-b.md` | Level B project schedule | Timeline and gates |
+| `diagnostico/mavlink-blueos-imagen.md` | BlueOS image MAVLink configuration | Ports, endpoints and services |
 | `resumen/case-summary-en.pdf` | One-page English case summary | RMA attachment |
 | `rma/correos-reparacion-EN.md` | English RMA emails for Europe and North America | Send to official centers |
 | `rma/correos-reparacion-ES.md` | Spanish version of the emails | Spanish-speaking reference |
