@@ -73,14 +73,16 @@ Fuente: Blue Robotics T200 — https://bluerobotics.com/store/thrusters/t100-t20
 | Empuje mínimo | 0.02 kgf, limitado por ESC |
 | Corriente full throttle @16 V | 24 A |
 | Corriente full throttle @20 V | 32 A |
+| Corriente típica en navegación (estimada de charts 10–20 V) | 5–15 A por thruster a velocidad de crucero (~25–50 % throttle); los 6 thrusters no van a pleno al mismo tiempo en régimen normal |
 | Potencia @16 V | 390 W |
 | Potencia @20 V | 645 W |
+| Resistencia fase-fase | No publican valor absoluto; la doc de troubleshooting dice que los 3 pares deben estar iguales dentro de **0.1–0.2 Ω** (fuente: https://github.com/bluerobotics/bluerobotics.github.io/blob/master/thrusters/t200.md). Rango esperado: décimas de ohm. |
 | Hélice | 76 mm |
 | Cable | 16 AWG |
 | Penetrador | M10 según variante |
 | Materiales mojados | policarbonato glass-filled, epoxi, acero inoxidable, plástico, poliuretano, aluminio 7075-T6, FKM, Buna-N |
 | Uso en seco | no más de ~10 s; rodamientos requieren agua |
-| Datos de performance | charts públicos 10–20 V |
+| Datos de performance | charts públicos 10–20 V; datos crudos en https://cad.bluerobotics.com/T200-Public-Performance-Data-10-20V-September-2019.xlsx |
 
 ESC asociado Basic ESC — https://bluerobotics.com/store/thrusters/speed-controllers/besc30-r3/
 

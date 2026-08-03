@@ -32,6 +32,8 @@
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B (ES) |
 | `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS (ES) |
 | `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Comparación Q-Motor vs T200 (ES) |
+| `diagnostico/protocolo-diagnostico-fisico-qmotor.md` | Protocolo diagnóstico físico Q-Motor (ES) |
+| `diagnostico/especificaciones-bateria-nivel-b.md` | Especificaciones batería Nivel B (ES) |
 | `resumen/case-summary-en.pdf` | Resumen para RMA / RMA summary (EN) |
 | `rma/correos-reparacion-EN.md` | Correos RMA inglés / EN emails |
 | `rma/correos-reparacion-ES.md` | Correos RMA español / ES emails |

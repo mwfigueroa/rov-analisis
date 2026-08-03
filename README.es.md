@@ -93,6 +93,8 @@ La meta práctica es llegar a una derivación clara y defendible ante un centro 
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B | Cronograma y gates |
 | `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS | Puertos, endpoints y servicios |
 | `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Comparación Q-Motor vs T200 | Datasheet, inferencias y método |
+| `diagnostico/protocolo-diagnostico-fisico-qmotor.md` | Protocolo diagnóstico físico Q-Motor | Giro a mano, fase-fase, aislamiento |
+| `diagnostico/especificaciones-bateria-nivel-b.md` | Especificaciones batería Nivel B | Requisitos, autonomía y opciones |
 | `resumen/case-summary-en.pdf` | Resumen de caso de 1 página en inglés | Adjunto para RMA |
 | `rma/correos-reparacion-EN.md` | Correos de RMA en inglés para Europa y Norteamérica | Enviar a centros oficiales |
 | `rma/correos-reparacion-ES.md` | Versión en español de los correos | Referencia hispanohablante |

@@ -93,6 +93,8 @@ The practical goal is to reach a clear, defensible referral to an authorized ser
 | `diagnostico/project-schedule-nivel-b.md` | Level B project schedule | Timeline and gates |
 | `diagnostico/mavlink-blueos-imagen.md` | BlueOS image MAVLink configuration | Ports, endpoints and services |
 | `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Q-Motor vs T200 comparison | Datasheet, inferences and method |
+| `diagnostico/protocolo-diagnostico-fisico-qmotor.md` | Q-Motor physical diagnosis protocol | Manual spin, phase-to-phase, insulation |
+| `diagnostico/especificaciones-bateria-nivel-b.md` | Level B battery specifications | Requirements, autonomy and options |
 | `resumen/case-summary-en.pdf` | One-page English case summary | RMA attachment |
 | `rma/correos-reparacion-EN.md` | English RMA emails for Europe and North America | Send to official centers |
 | `rma/correos-reparacion-ES.md` | Spanish version of the emails | Spanish-speaking reference |

@@ -466,3 +466,5 @@ Acción decidida: ________________________________________
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B |
 | `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS |
 | `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Comparación Q-Motor vs T200 |
+| `diagnostico/protocolo-diagnostico-fisico-qmotor.md` | Protocolo diagnóstico físico Q-Motor |
+| `diagnostico/especificaciones-bateria-nivel-b.md` | Especificaciones batería Nivel B |
