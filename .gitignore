@@ -22,3 +22,6 @@ $RECYCLE.BIN/
 ~$*.xlsx
 ~$*.docx
 *.log
+
+# Imagenes Docker locales (no versionar)
+docker/

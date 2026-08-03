@@ -465,3 +465,4 @@ Acción decidida: ________________________________________
 | `diagnostico/bom-mixto-oficial-aliexpress.md` | BOM mixto oficial/AliExpress/banco |
 | `diagnostico/project-schedule-nivel-b.md` | Project schedule Nivel B |
 | `diagnostico/mavlink-blueos-imagen.md` | Configuración MAVLink imagen BlueOS |
+| `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Comparación Q-Motor vs T200 |
