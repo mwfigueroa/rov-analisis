@@ -13,6 +13,7 @@ Proyecto de análisis y seguimiento de caso para un **QYSEA FIFISH V6 Expert** e
 | Campo | Estado |
 |---|---|
 | Equipo | QYSEA FIFISH V6 Expert |
+| Serial | QY50004707 |
 | Ubicación del usuario | Argentina |
 | Fecha base del diagnóstico | 2026-07-30 |
 | Evento | Exposición a agua salada; el ROV se encendió después del incidente |
@@ -167,7 +168,7 @@ Un motor BLDC que **tiembla y calienta** está consumiendo corriente sin produci
 - [ ] Confirmar si la condensación fue benigna o ingreso salino real.
 - [ ] Confirmar versión del equipo: M100 o M200.
 - [ ] Confirmar largo del umbilical.
-- [ ] Confirmar número de serie.
+- [x] Confirmar número de serie (`QY50004707`).
 - [ ] Confirmar datos de compra: distribuidor y fecha.
 
 ---

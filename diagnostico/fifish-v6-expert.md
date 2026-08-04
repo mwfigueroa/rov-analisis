@@ -12,6 +12,7 @@
 **Fase del proceso:** diagnóstico *razonado* completo — **pendiente de mediciones físicas**. No se ha hecho ninguna intervención ni reparación todavía.
 
 **Confirmado hasta ahora:**
+- **Serial del equipo: QY50004707**.
 - Exposición a **agua salada**.
 - Se **encendió después** del incidente.
 - **Condensación en el lente del domo** (única evidencia inicial de humedad; falta confirmar si fue niebla benigna o ingreso salino real).
