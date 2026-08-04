@@ -21,11 +21,13 @@ Para Raspberry Pi 4B, la documentacion de BlueOS indica imagen **ARMv7 32-bit Bu
 Importante: existe imagen lista de **BlueOS**, pero no una imagen completa ya configurada para tu ROV/ArduSub. El flujo correcto es: flashear BlueOS, entrar a la interfaz web, actualizar, ir a **Vehicle > Firmware**, seleccionar **ArduSub** y luego configurar sensores, power, frame y failsafes en QGroundControl/Cockpit. La guia de Navigator indica minimo **ArduSub 4.5.1** para Navigator y recomienda usar latest stable si no se sabe que version elegir.
 
 Notas importantes:
+
 - El kit de Navigator declara que incluye una microSD con BlueOS. Igual conviene saber reinstalarla.
 - BlueOS no es solo un sistema operativo: es la capa companion para gestionar autopilot, video, extensiones, red y actualizaciones.
 - No instalar primero Raspberry Pi OS desktop y despues intentar convertirlo en el stack final salvo que se acepte una integracion manual mas compleja.
 
 Flujo recomendado:
+
 1. Grabar BlueOS en microSD para Raspberry Pi 4.
 2. Montar Navigator sobre la Raspberry Pi 4 con su heatsink.
 3. Alimentar con fuente 5 V adecuada.
@@ -42,34 +44,34 @@ En esta arquitectura, la Raspberry Pi 4 actua como cerebro Linux y la Navigator 
 
 ### Placas requeridas
 
-| Placa / interfaz | Rol | Obligatoria para MVP |
-|---|---|---:|
-| Navigator Flight Controller | Sensores onboard, PWM, ADC, leak probes, puertos serie/I2C | Si |
-| Raspberry Pi 4 | Ejecuta BlueOS y el stack de control | Si |
-| Fuente 5V 6A | Alimentacion estable de Pi/Navigator/perifericos | Si |
-| Power Sense Module | Medicion de voltaje/corriente | Recomendado |
-| Bar30 / MS5837 | Profundidad para depth hold | Si para depth hold |
-| 6 x Basic ESC | Control de los 6 thrusters | Si |
-| Fathom-X par | Ethernet por tether de largo alcance | Si si el tether no es Ethernet directo |
-| Camara Pi/USB/IP | FPV/video | Si para FPV |
-| Sondas SOS leak | Deteccion de fuga | Recomendado |
-| Driver de luces / MOSFET | Control seguro de LEDs | Si se usan luces |
-| JST GH cables/adaptadores | Conexion de sensores y expansions | Segun componentes |
-| I2C level converter / splitter | Solo si algun dispositivo I2C lo requiere | Opcional |
-| DVL/USBL/GPS | Navegacion avanzada | Opcional |
+| Placa / interfaz               | Rol                                                        |                   Obligatoria para MVP |
+| ------------------------------ | ---------------------------------------------------------- | -------------------------------------: |
+| Navigator Flight Controller    | Sensores onboard, PWM, ADC, leak probes, puertos serie/I2C |                                     Si |
+| Raspberry Pi 4                 | Ejecuta BlueOS y el stack de control                       |                                     Si |
+| Fuente 5V 6A                   | Alimentacion estable de Pi/Navigator/perifericos           |                                     Si |
+| Power Sense Module             | Medicion de voltaje/corriente                              |                            Recomendado |
+| Bar30 / MS5837                 | Profundidad para depth hold                                |                     Si para depth hold |
+| 6 x Basic ESC                  | Control de los 6 thrusters                                 |                                     Si |
+| sta                           | Ethernet por tether de largo alcance                       | Si si el tether no es Ethernet directo |
+| Camara Pi/USB/IP               | FPV/video                                                  |                            Si para FPV |
+| Sondas SOS leak                | Deteccion de fuga                                          |                            Recomendado |
+| Driver de luces / MOSFET       | Control seguro de LEDs                                     |                       Si se usan luces |
+| JST GH cables/adaptadores      | Conexion de sensores y expansions                          |                      Segun componentes |
+| I2C level converter / splitter | Solo si algun dispositivo I2C lo requiere                  |                               Opcional |
+| DVL/USBL/GPS                   | Navegacion avanzada                                        |                               Opcional |
 
 ### Microcontroladores y firmware en arquitectura Navigator
 
-| Elemento | Que es | Firmware | Como se carga |
-|---|---|---|---|
-| Raspberry Pi 4 | Computadora Linux, no un MCU tradicional | BlueOS + servicios + ArduPilot/ArduSub gestionado por BlueOS | Imagen en microSD; actualizacion por BlueOS |
-| Navigator | Placa de interfaz con sensores e ICs | No se flashea como autopilot por el usuario | Sus ICs trabajan como perifericos de la Pi |
-| PCA9685 en Navigator | Generador PWM | Firmware interno del IC | No se flashea; lo usa el stack |
-| ADS1115 en Navigator | ADC | Firmware interno del IC | No se flashea |
-| IMU/compas/barometro Navigator | Sensores | Firmware interno del sensor | No se flashea |
-| Basic ESC | Controlador de motor BLDC | BLHeli_S | Normalmente no se toca; si se cambia, hacerlo con cuidado y documentacion |
-| Fathom-X/HomePlug | Interfaz Ethernet por par | Firmware del modulo | No se flashea para uso normal |
-| Cockpit/QGroundControl | GCS en superficie | App de escritorio/web | Instalacion en laptop/tablet |
+| Elemento                       | Que es                                   | Firmware                                                     | Como se carga                                                             |
+| ------------------------------ | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Raspberry Pi 4                 | Computadora Linux, no un MCU tradicional | BlueOS + servicios + ArduPilot/ArduSub gestionado por BlueOS | Imagen en microSD; actualizacion por BlueOS                               |
+| Navigator                      | Placa de interfaz con sensores e ICs     | No se flashea como autopilot por el usuario                  | Sus ICs trabajan como perifericos de la Pi                                |
+| PCA9685 en Navigator           | Generador PWM                            | Firmware interno del IC                                      | No se flashea; lo usa el stack                                            |
+| ADS1115 en Navigator           | ADC                                      | Firmware interno del IC                                      | No se flashea                                                             |
+| IMU/compas/barometro Navigator | Sensores                                 | Firmware interno del sensor                                  | No se flashea                                                             |
+| Basic ESC                      | Controlador de motor BLDC                | BLHeli_S                                                     | Normalmente no se toca; si se cambia, hacerlo con cuidado y documentacion |
+| Fathom-X/HomePlug              | Interfaz Ethernet por par                | Firmware del modulo                                          | No se flashea para uso normal                                             |
+| Cockpit/QGroundControl         | GCS en superficie                        | App de escritorio/web                                        | Instalacion en laptop/tablet                                              |
 
 Punto clave: con Navigator no hay un Pixhawk/STM32 separado ejecutando ArduPilot. La integracion depende de BlueOS/ArduPilot corriendo en la Raspberry Pi y de la Navigator como capa de E/S.
 
@@ -81,25 +83,25 @@ Si se quiere un microcontrolador clasico de autopilot, la alternativa es usar Pi
 
 ### Placas requeridas
 
-| Placa / interfaz | Rol |
-|---|---|
-| Pixhawk 6C/6X u otra placa ArduPilot | MCU principal que ejecuta ArduSub |
-| Raspberry Pi 4 + BlueOS | Companion para video, red y extensiones |
-| Power module compatible | Medicion y a veces alimentacion |
-| Bar30 | Profundidad |
-| Basic ESC / ESC compatibles | Motores |
-| Fathom-X | Tether |
-| Camara | Video |
-| Sensores opcionales | DVL, GPS superficie, USBL |
+| Placa / interfaz                     | Rol                                     |
+| ------------------------------------ | --------------------------------------- |
+| Pixhawk 6C/6X u otra placa ArduPilot | MCU principal que ejecuta ArduSub       |
+| Raspberry Pi 4 + BlueOS              | Companion para video, red y extensiones |
+| Power module compatible              | Medicion y a veces alimentacion         |
+| Bar30                                | Profundidad                             |
+| Basic ESC / ESC compatibles          | Motores                                 |
+| Fathom-X                             | Tether                                  |
+| Camara                               | Video                                   |
+| Sensores opcionales                  | DVL, GPS superficie, USBL               |
 
 ### Firmware en arquitectura Pixhawk
 
-| Elemento | Firmware | Como se carga |
-|---|---|---|
+| Elemento                   | Firmware                        | Como se carga                                        |
+| -------------------------- | ------------------------------- | ---------------------------------------------------- |
 | Pixhawk STM32H7 u otro MCU | ArduSub/ArduPilot sobre ChibiOS | QGroundControl, Mission Planner o BlueOS segun setup |
-| Raspberry Pi 4 | BlueOS companion | Imagen microSD |
-| ESC | BLHeli_S/AM32 segun modelo | Solo si se necesita configurar; documentar |
-| GCS | Cockpit/QGroundControl | App de escritorio |
+| Raspberry Pi 4             | BlueOS companion                | Imagen microSD                                       |
+| ESC                        | BLHeli_S/AM32 segun modelo      | Solo si se necesita configurar; documentar           |
+| GCS                        | Cockpit/QGroundControl          | App de escritorio                                    |
 
 Esta arquitectura es mas parecida a drones clasicos: MCU de tiempo real para control y companion Linux para video/red.
 
