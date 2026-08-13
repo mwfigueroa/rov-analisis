@@ -9,15 +9,16 @@
 
 ## Resumen rápido / Quick summary
 
-**ES:** Caso de análisis para un **QYSEA FIFISH V6 Expert** expuesto a agua salada. Se encendió después del incidente, hubo condensación en el domo y un thruster frontal cercano al domo tembló en una prueba breve en aire. La batería está retirada, el equipo no debe re-energizarse y no se recomienda abrir el casco. Próximo paso: completar mediciones no destructivas y enviar RMA a servicio autorizado.
+**ES:** Caso de análisis para un **QYSEA FIFISH V6 Expert** expuesto a agua salada. **Veredicto final (2026-08-13):** la **placa electrónica principal** fue atacada por la humedad en varios sectores; se reconstruyeron pistas pero queda una conexión en los pines del microcontrolador sin reparación viable. El ROV arranca parcialmente pero el control de motores no responde. Decisión pendiente de gerencia: **A)** reparar reemplazando la placa main (serie similar `ATL574600045`, validando firmware) + motores de repuesto, o **B)** desarrollar ROV propio / reutilizar partes del V6.
 
-**EN:** Analysis case for a **QYSEA FIFISH V6 Expert** exposed to saltwater. It was powered on after the incident, condensation appeared inside the dome, and one front thruster near the dome trembled during a brief air test. The battery is removed, the unit must not be re-energized, and opening the hull is not recommended. Next step: complete non-destructive measurements and send an RMA request to an authorized service center.
+**EN:** Analysis case for a **QYSEA FIFISH V6 Expert** exposed to saltwater. **Final verdict (2026-08-13):** the **main electronic board** was attacked by moisture in several sectors; tracks were rebuilt but one connection on the microcontroller pins remains unrepairable. The ROV boots partially but motor control does not respond. Pending management decision: **A)** repair by replacing the main board (similar series `ATL574600045`, firmware must be validated) + spare motors, or **B)** develop our own ROV / reuse V6 parts.
 
 ## Archivos clave / Key files
 
 | Archivo / File | Contenido / Content |
 |---|---|
-| `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo (ES) |
+| `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo (ES), veredicto final en §21 |
+| `diagnostico/informe-gerencia-resolucion.md` | 🆕 Informe a gerencia: análisis, veredicto y dos opciones (reparar vs. ROV propio) (ES) |
 | `diagnostico/firmware-open-source-rov.md` | 🆕 Análisis de firmware open-source alternativo (ES) |
 | `diagnostico/ardusub-adaptacion-fifish-v6.md` | Adaptación correlativa ArduSub/ArduPilot (ES) |
 | `diagnostico/reporte-reutilizacion-v6.md` | Reporte de reutilización de componentes del V6 (ES) |
@@ -78,5 +79,5 @@
 
 ## Estado / Status
 
-**ES:** listo para completar mediciones y enviar solicitud de RMA.  
-**EN:** ready to complete measurements and send the RMA request.
+**ES:** veredicto final emitido — pendiente de decisión gerencial: reparar (placa main `ATL574600045` + motores) o ROV propio / reutilización.  
+**EN:** final verdict issued — pending management decision: repair (main board `ATL574600045` + motors) or own ROV / reuse.

@@ -7,9 +7,9 @@
 
 ## 0. Estado actual / bitácora
 
-**Última actualización:** 2026-08-03 (3.ª revisión: reset por software y falla latcheada tras motor atascado)
+**Última actualización:** 2026-08-13 (veredicto final: placa electrónica principal dañada por humedad)
 
-**Fase del proceso:** diagnóstico *razonado* completo — **pendiente de mediciones físicas**. No se ha hecho ninguna intervención ni reparación todavía.
+**Fase del proceso:** cerrada con **veredicto final** (placa principal, §21). **Pendiente:** decisión gerencial entre **Opción A** — reparar reemplazando la placa main (serie similar `ATL574600045`) más motores de repuesto — y **Opción B** — desarrollar ROV propio o reutilizar partes del V6. Detalle en [`informe-gerencia-resolucion.md`](informe-gerencia-resolucion.md).
 
 **Confirmado hasta ahora:**
 - **Serial del equipo: QY50004707**.
@@ -22,11 +22,7 @@
 
 **Hipótesis principal:** falla **localizada en un thruster frontal** (junto al domo). Lo más probable, por el temblor + calor + exposición a mar, es **"fase perdida" (Rama B eléctrica)** por corrosión salina en fase/lead/conector o canal del ESC. **No descartada** aún la **Rama A mecánica** (obstrucción/rodamiento).
 
-**Próximo paso decisivo (no realizado):**
-1. Girar a mano el thruster sospechoso vs. los sanos → separa mecánico de eléctrico (§8, Paso 1).
-2. Medir **fase-a-fase** y **aislamiento** con multímetro (§15, plantilla).
-
-**Pendiente de datos del usuario:** resultados de giro a mano, mediciones del multímetro, inspección de sal/corrosión, y código de falla en la app.
+**Pendiente (2026-08-13):** decisión gerencial entre **Opción A** (reparar: reemplazo de placa main serie similar `ATL574600045`, validando versión de firmware, + motores de repuesto de Blue Skies Drones) y **Opción B** (ROV propio / reutilización de partes del V6). Detalle en [`informe-gerencia-resolucion.md`](informe-gerencia-resolucion.md).
 
 **Avance de la sesión (2026-07-30):**
 - Revisada documentación oficial de QYSEA (Quick Start Manual V2.2 + Motors & Battery Maintenance Guide). Ver §17.
@@ -44,7 +40,14 @@
 - Se agrega protocolo de **reset por software disponible públicamente** y criterio de **falla latcheada** en §7A.
 - **Conclusión operativa:** si re-bloquea inmediatamente después del reset completo con batería retirada, no seguir forzando unlock; medir y derivar a servicio.
 
-**Decisión de ruta:** (a) completar diagnóstico **no destructivo** (giro a mano + multímetro) para afinar el alcance y, luego, (b) **enviar a centro autorizado** para desarmado, reparación del thruster y **re-certificación del sellado a 100–200 m**. No se recomienda abrir el casco sin certificación de estanqueidad.
+**Avance de la sesión (2026-08-13) — veredicto final:**
+- Inspección e intervención sobre la **placa electrónica principal** (controlador principal del ROV): la **humedad atacó varios sectores** de la placa.
+- Se **reconstruyeron pistas** en las zonas afectadas, pero queda **una conexión (pad/vía) en los pines del microcontrolador sin reparación viable**.
+- Resultado funcional: el ROV **arranca parcialmente**, pero las **funciones de control de motores quedaron mal / sin respuesta**.
+- Evidencia fotográfica agregada al repositorio: `Fotos/IMG_9338.jpeg` … `Fotos/IMG_9349.jpeg`.
+- **Veredicto final en §21.** La ruta RMA original pierde sentido para esta unidad (apertura e intervención de placa); la decisión pasa a **gerencia**: reparar (placa nueva) o ROV propio. Ver [`informe-gerencia-resolucion.md`](informe-gerencia-resolucion.md).
+
+**Decisión de ruta (2026-08-13):** superada por el veredicto final (§21). La apertura e intervención de la placa principal descarta la derivación a centro autorizado bajo postventa. Quedan dos rutas, documentadas para gerencia: **Opción A** — reparación local por reemplazo de placa main (serie similar `ATL574600045`, validando versión de firmware) más motores de repuesto (Blue Skies Drones); **Opción B** — desarrollo de ROV propio o reutilización de partes del V6. Detalle en [`informe-gerencia-resolucion.md`](informe-gerencia-resolucion.md).
 
 ---
 
@@ -469,3 +472,37 @@ Acción decidida: ________________________________________
 | `diagnostico/comparacion-motores-qmotor-vs-t200.md` | Comparación Q-Motor vs T200 |
 | `diagnostico/protocolo-diagnostico-fisico-qmotor.md` | Protocolo diagnóstico físico Q-Motor |
 | `diagnostico/especificaciones-bateria-nivel-b.md` | Especificaciones batería Nivel B |
+
+---
+
+## 21. Veredicto final (2026-08-13)
+
+### 21.1 Hallazgos de la placa principal
+
+| Aspecto | Estado |
+|---|---|
+| Placa electrónica principal (controlador principal del ROV) | Atacada por **humedad en varios sectores** |
+| Pistas en zonas afectadas | **Reconstruidas** |
+| Conexión (pad/vía) en los pines del microcontrolador | **Sin reparación viable** |
+| Arranque del ROV | **Parcial** |
+| Funciones de control de motores | **Mal / sin respuesta** |
+
+### 21.2 Lectura técnica
+
+- La humedad no quedó limitada al canal del thruster frontal (hipótesis original de §5–§6): afectó **varios sectores** de la placa electrónica principal.
+- Las pistas alcanzables fueron reconstruidas, pero **una conexión sobre los pines del microcontrolador quedó sin reparar**. Esa conexión es la causa de que el sistema **arranque parcialmente** pero el **control de motores no responda**.
+- Esto confirma la **Rama B (eléctrica)** del §5, extendida de "un canal de ESC" a **daño distribuido de placa principal**.
+- La reparación de la placa a nivel componente **no es viable** en el estado actual.
+
+### 21.3 Evidencia
+
+- Fotos de la intervención (sesión 2026-08-13): `Fotos/IMG_9338.jpeg` … `Fotos/IMG_9349.jpeg`.
+
+### 21.4 Consecuencias
+
+1. La reparación a nivel componente de la placa main queda **descartada** (pad/vía del MCU sin rehacer).
+2. La ruta RMA/postventa de QYSEA (§17–§19) queda **fuera de alcance** para esta unidad por apertura e intervención no autorizada (descargo oficial del Quick Start Manual, pág. 36).
+3. Quedan **dos opciones**, trasladadas a gerencia:
+   - **Opción A — Reparar:** reemplazo de la placa main (serie similar `ATL574600045`, validando **versión de firmware**) + motores de repuesto (Blue Skies Drones: https://www.blueskiesdroneshop.com/).
+   - **Opción B — ROV propio:** desarrollar un ROV propio (ArduSub/BlueOS) y/o adecuar y reutilizar las partes del V6 (casco, mecánica, thrusters sanos, tether).
+   - Detalle completo: [`informe-gerencia-resolucion.md`](informe-gerencia-resolucion.md).

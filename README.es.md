@@ -18,14 +18,10 @@ Proyecto de análisis y seguimiento de caso para un **QYSEA FIFISH V6 Expert** e
 | Fecha base del diagnóstico | 2026-07-30 |
 | Evento | Exposición a agua salada; el ROV se encendió después del incidente |
 | Evidencia inicial de humedad | Condensación en la cara interna del lente del domo |
-| Confirmación de ingreso salino | Pendiente: prueba de residuo salino |
-| Prueba realizada | Bench test breve en aire |
-| Resultado de la prueba | 5 thrusters giraron normalmente; 1 thruster frontal cercano al domo tembló/sacudió |
-| Temperatura observada | Carcasa aprox. 40–45 °C cerca de la zona afectada |
-| Seguridad eléctrica | Batería Li-ion retirada y guardada de forma segura |
-| Estado de intervención | No re-energizado, sin desarmado, sin reparación intentada |
+| Hallazgo final (2026-08-13) | Placa electrónica principal atacada por humedad en varios sectores; pistas reconstruidas; una conexión (pad/vía) en los pines del microcontrolador sin reparación viable; arranque parcial y control de motores sin respuesta |
+| Estado de intervención | Intervención sobre la placa realizada; reparación a nivel componente descartada; decisión de resolución en manos de gerencia |
 
-**Fase del proceso:** diagnóstico razonado completo, pendiente de mediciones físicas no destructivas.
+**Fase del proceso:** veredicto final emitido (placa principal). Pendiente: decisión gerencial entre **Opción A** (reparar: placa main serie similar `ATL574600045` + motores de repuesto) y **Opción B** (ROV propio / reutilización). Ver `diagnostico/informe-gerencia-resolucion.md`.
 
 ---
 
@@ -79,7 +75,8 @@ La meta práctica es llegar a una derivación clara y defendible ante un centro 
 | `Readme.md` | Índice corto bilingüe | Portada del repositorio |
 | `README.es.md` | Documentación completa en español | Este archivo |
 | `README.en.md` | Full documentation in English | English version |
-| `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo, plan de pruebas, plantilla de mediciones, centros de servicio y fuentes | Documento central de análisis |
+| `diagnostico/fifish-v6-expert.md` | Diagnóstico técnico completo, plan de pruebas, plantilla de mediciones, centros de servicio y fuentes; **veredicto final en §21** | Documento central de análisis |
+| `diagnostico/informe-gerencia-resolucion.md` | 🆕 Informe a gerencia: análisis completo, veredicto final y dos opciones de resolución (A: reparar con placa main `ATL574600045` + motores; B: ROV propio / reutilización) | Documento de decisión para gerencia |
 | `diagnostico/firmware-open-source-rov.md` | Análisis de firmware open-source alternativo | Referencia técnica adicional |
 | `diagnostico/ardusub-adaptacion-fifish-v6.md` | Adaptación correlativa ArduSub/ArduPilot | Diseño técnico propuesto |
 | `diagnostico/reporte-reutilizacion-v6.md` | Reporte de reutilización de componentes del V6 | Evaluación técnica detallada |
@@ -264,6 +261,6 @@ Referencias externas:
 
 ## 17. Estado del proyecto
 
-Listo para completar mediciones y enviar solicitud de RMA.  
-Bloqueante principal: faltan datos físicos del thruster sospechoso y datos del equipo.  
-Decisión ya tomada: no abrir el casco localmente; derivar a servicio autorizado con re-certificación de sellado.
+**Veredicto final emitido (2026-08-13):** placa electrónica principal dañada por humedad en varios sectores; reparación a nivel componente inviable (conexión en pines del MCU sin rehacer); el ROV arranca parcialmente pero el control de motores no responde.  
+**Pendiente:** decisión gerencial entre **Opción A** — reparar reemplazando la placa main (serie similar `ATL574600045`, validando versión de firmware) y comprando un par de motores de repuesto (Blue Skies Drones) — y **Opción B** — desarrollar ROV propio o adecuar/reutilizar partes del V6.  
+**Documento de decisión:** `diagnostico/informe-gerencia-resolucion.md`.

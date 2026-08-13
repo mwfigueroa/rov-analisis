@@ -17,14 +17,10 @@ Case-analysis and tracking project for a **QYSEA FIFISH V6 Expert** exposed to *
 | Diagnosis baseline date | 2026-07-30 |
 | Event | Saltwater exposure; the ROV was powered on after the incident |
 | Initial moisture evidence | Condensation on the inside of the dome lens |
-| Saline ingress confirmation | Pending: salt-residue test |
-| Test performed | Brief bench test in air |
-| Test result | 5 thrusters ran normally; 1 front thruster near the dome trembled/shook |
-| Observed temperature | Casing approx. 40–45 °C near the affected area |
-| Electrical safety | Li-ion battery removed and stored safely |
-| Intervention status | Not re-energized, no disassembly, no repair attempted |
+| Final finding (2026-08-13) | Main electronic board attacked by moisture in several sectors; tracks rebuilt; one connection (pad/via) on the microcontroller pins unrepairable; partial boot, motor control unresponsive |
+| Intervention status | Board intervention performed; component-level repair ruled out; resolution decision pending management |
 
-**Process phase:** reasoned diagnosis complete; non-destructive physical measurements pending.
+**Process phase:** final verdict issued (main board). Pending: management decision between **Option A** (repair: main board similar series `ATL574600045` + spare motors) and **Option B** (own ROV / reuse). See `diagnostico/informe-gerencia-resolucion.md` (Spanish).
 
 ---
 
@@ -78,7 +74,8 @@ The practical goal is to reach a clear, defensible referral to an authorized ser
 | `Readme.md` | Short bilingual index | Repository landing page |
 | `README.es.md` | Documentación completa en español | Spanish version |
 | `README.en.md` | Full documentation in English | This file |
-| `diagnostico/fifish-v6-expert.md` | Full technical diagnosis, test plan, measurement template, service centers, and sources | Central analysis document |
+| `diagnostico/fifish-v6-expert.md` | Full technical diagnosis, test plan, measurement template, service centers, and sources; final verdict in §21 | Central analysis document |
+| `diagnostico/informe-gerencia-resolucion.md` | 🆕 Management report: full analysis, final verdict, and two resolution options (A: repair with main board `ATL574600045` + spare motors; B: own ROV / parts reuse) — in Spanish | Decision document for management |
 | `diagnostico/firmware-open-source-rov.md` | Alternative open-source firmware analysis | Additional technical reference |
 | `diagnostico/ardusub-adaptacion-fifish-v6.md` | Correlative ArduSub/ArduPilot adaptation | Proposed technical design |
 | `diagnostico/reporte-reutilizacion-v6.md` | V6 component-reuse report | Detailed technical assessment |
